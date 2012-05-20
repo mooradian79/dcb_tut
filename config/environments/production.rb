@@ -1,4 +1,16 @@
 DcbTut::Application.configure do
+	
+	config.action_mailer.default_url_options = { :host => 'example.com' }
+	
+	# actionmailer config
+	
+	# Set up for production - deliveries, no errors raised
+	
+	config.action_mailer.delivery_method = :smtp
+	config.action_mailer.performs_deliveries = true
+	config.action_mailer.raise_delivery_errors = false
+	config.action_mailer.default :charset => "utf-8"
+	
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
