@@ -1,0 +1,1 @@
+This is a tutorial of the devise cancan and bootstrap gems.
